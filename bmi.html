@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+
+    <h1>BMI CALCULATOR</h1>
+    <div class="container-1">
+        <form action="">
+            <label for="weight" id="info1" class="label">Weight</label>
+                <select name="weight" id="drop1" onchange="_drop1()">
+                    <option value="kilogram" class="option1">kilogram</option> 
+                    <option value="pound" class="option1">pound</option> 
+                </select>
+            <input type="number" id="weight" class="info" placeholder="in kg"><br><br>
+            <label for="height" id="info2" class="label">Height</label>
+            <select name="height" id="drop2" onchange="_drop2()">
+                <option value="centimeter" class="option2">centimeter</option>
+                <option value="meter" class="option2">meter</option>
+                <option value="feet & inches" class="option2">feet & inches</option>
+            </select>
+            <input type="number" id="height" class="info" placeholder="in cm"><br><br>
+            <input type="button" id="button" value="Submit">
+            <input type="reset" id="reset" value="Clear">
+        </form>
+    </div>
+    <div class="container-2">
+        <p id="demo">BMI ➡️ </p>
+        <span id="fvalue" class="res"></span>
+        <p id="demo1">Weight Status ➡️ </p>
+        <span id="result" class="res"></span>
+    </div>
+</body>
+
+<script src="bmi.js"></script>
+
+</html>
